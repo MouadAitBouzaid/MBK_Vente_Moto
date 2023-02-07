@@ -334,19 +334,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/cocobird/.nuget/packages/": {}
+    "C:\\Users\\proev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cocobird/RiderProjects/studentService/studentService/studentService.csproj",
+      "projectUniqueName": "C:\\Users\\proev\\Desktop\\StudentManager\\studentService\\studentService\\studentService.csproj",
       "projectName": "studentService",
-      "projectPath": "/Users/cocobird/RiderProjects/studentService/studentService/studentService.csproj",
-      "packagesPath": "/Users/cocobird/.nuget/packages/",
-      "outputPath": "/Users/cocobird/RiderProjects/studentService/studentService/obj/",
+      "projectPath": "C:\\Users\\proev\\Desktop\\StudentManager\\studentService\\studentService\\studentService.csproj",
+      "packagesPath": "C:\\Users\\proev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\proev\\Desktop\\StudentManager\\studentService\\studentService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/cocobird/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\proev\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -390,6 +390,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.12, 6.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.12, 6.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.12, 6.0.12]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.12, 6.0.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -398,7 +416,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.405/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
