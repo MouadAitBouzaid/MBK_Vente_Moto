@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{D39E245F-C37C-47B2-8287-2423536EB3DB}|Default">
+  <MonoDevelop.Ide.ItemProperties.Services.StudentService PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.FrontEnd.StudentManagementService PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentService/Program.cs">
+    <Files>
+      <File FileName="StudentService/Program.cs" Line="6" Column="26" />
+      <File FileName="StudentService/Models/Student.cs" Line="21" Column="1" />
+      <File FileName="StudentService/StudentService.csproj" Line="8" Column="1" />
+      <File FileName="StudentService/DbContexts/ApplicationDbContext.cs" Line="17" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SiteWebService" expanded="True">
+            <Node name="Services" expanded="True">
+              <Node name="StudentService" expanded="True">
+                <Node name="DbContexts" expanded="True" />
+                <Node name="Models" expanded="True" />
+                <Node name="Program.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

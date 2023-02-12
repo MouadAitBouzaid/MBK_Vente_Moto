@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1704.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{8F5455F3-1FA0-4A43-93CF-39075414BCC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentManagementService", "StudentManagementService\StudentManagementService.csproj", "{345BA275-8D8A-40C4-94BF-0FFD7A7B885A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{410BFB0E-45C0-49E9-9868-60737A56D3F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentService", "StudentService\StudentService.csproj", "{D39E245F-C37C-47B2-8287-2423536EB3DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{345BA275-8D8A-40C4-94BF-0FFD7A7B885A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{345BA275-8D8A-40C4-94BF-0FFD7A7B885A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{345BA275-8D8A-40C4-94BF-0FFD7A7B885A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{345BA275-8D8A-40C4-94BF-0FFD7A7B885A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D39E245F-C37C-47B2-8287-2423536EB3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D39E245F-C37C-47B2-8287-2423536EB3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D39E245F-C37C-47B2-8287-2423536EB3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D39E245F-C37C-47B2-8287-2423536EB3DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A8039BE-5C8F-4535-BCBB-DAE4C2985D5C}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{345BA275-8D8A-40C4-94BF-0FFD7A7B885A} = {8F5455F3-1FA0-4A43-93CF-39075414BCC8}
+		{D39E245F-C37C-47B2-8287-2423536EB3DB} = {410BFB0E-45C0-49E9-9868-60737A56D3F6}
+	EndGlobalSection
+EndGlobal
