@@ -1,0 +1,69 @@
+﻿@model Handmade.Web.Models.EmbroideryDto
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="shop_section layout_padding">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <form asp-action="EmbroideryDelete">
+                <input asp-for="Id" hidden />
+                <div class="container border p-3">
+
+                    <h1 classs="text-primary">Delete Item</h1>
+                    <div class="row">
+
+                        <div class="col-2">
+                            <label asp-for="Nom" class="control-label pt-2" style="font-size:20px"></label>
+
+                        </div>
+                        <div class="col-10 pb-3">
+                            <input asp-for="Nom" disabled class="form-control" />
+
+
+                        </div>
+                        <div class="col-2">
+                            <label asp-for="Categorie" class="control-label pt-2" style="font-size:20px"></label>
+
+                        </div>
+                        <div class="col-10 pb-3">
+                            <input asp-for="Categorie" disabled class="form-control" />
+
+
+                        </div>
+                        <div class="col-2">
+                            <label asp-for="Prix" class="control-label pt-2" style="font-size:20px"></label>
+
+                        </div>
+                        <div class="col-10 pb-3">
+                            <input asp-for="Prix" disabled class="form-control" />
+
+
+                        </div>
+                        <div class="col-2">
+                            <label asp-for="ImageURL" class="control-label pt-2" style="font-size:20px"></label>
+
+                        </div>
+                        <div class="col-10 pb-3">
+                            <input asp-for="ImageURL" disabled class="form-control" />
+
+
+                        </div>
+
+                        <div class="col-5 offset-2">
+                            <a asp-action="EmbroideryIndex" class="btn-primary btn form-control">Annuler</a>
+                        </div>
+                        <div class="col-5">
+                            <input asp-action="EmbroideryDelete" type="submit" value="Supprimer" class="btn btn-danger form-control">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+

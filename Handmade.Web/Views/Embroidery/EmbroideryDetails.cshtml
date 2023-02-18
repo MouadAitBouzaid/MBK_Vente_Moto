@@ -1,0 +1,66 @@
+﻿@model Handmade.Web.Models.EmbroideryDto
+
+
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+	<title>Embroidery Item</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+	<!-- Additional CSS Files -->
+	<link rel="stylesheet" href="assets/css/fontawesome.css">
+	<link rel="stylesheet" href="assets/css/tooplate-main.css">
+	<link rel="stylesheet" href="assets/css/owl.css">
+	<link rel="stylesheet" href="assets/css/flex-slider.css">
+	<!--
+	Tooplate 2114 Pixie
+	https://www.tooplate.com/view/2114-pixie
+	-->
+</head>
+
+<body>
+	<section class="shop_section layout_padding">
+		<div class="container">
+			<div class="heading_container heading_center">
+				<div class="container">
+					<div class="card">
+						<div class="container-fliud">
+							<div class="wrapper row">
+								<div class="preview col-md-6">
+
+									<div class="preview-pic tab-content">
+										<div class="tab-pane active" id="pic-1">
+											<img src=@Model.ImageURL height="230px" />
+										</div>
+
+									</div>
+									<div>
+										<label class="form-control">@Model.Nom </label>
+									</div>
+											<div>
+												<label class="form-control">@Model.Nom </label>
+											</div>
+
+									<h5 class="price">Price: 
+										<span>@Model.Prix</span>$
+									</h5>
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>

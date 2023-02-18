@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Handmade.Web.props" />
+</Project>

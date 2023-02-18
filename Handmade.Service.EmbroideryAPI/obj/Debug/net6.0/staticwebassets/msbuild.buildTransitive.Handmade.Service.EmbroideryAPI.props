@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Handmade.Service.EmbroideryAPI.props" />
+</Project>

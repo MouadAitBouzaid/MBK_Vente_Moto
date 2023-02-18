@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Handmade.Web.Models.EmbroideryDto>
+@{
+    ViewData["Title"] = "Home Page";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="caption">
+                        <h2>MBK Motos</h2>
+                        <div class="line-dec"></div>
+                        <p>
+                            MBK Moto est un site de vente en ligne spécialisé dans la vente de motos neuves et d'occasion. Le site propose un large choix de marques de motos, allant des motos sportives aux motos de tourisme en passant par les motos tout-terrain. Les utilisateurs peuvent également acheter des accessoires pour leurs motos sur le site.
+                            <br><br>Check-out our catalogue for available MotoCycles <a rel="nofollow" href="/Embroidery/EmbroideryIndex">Catalog</a>
+                        </p>
+                        <div class="main-button">
+                            <a href="/Embroidery/EmbroideryIndex">Acheter !</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+    <!-- Featured Starts Here -->
+    <div class="featured-items">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Nouvelles annonces</h1>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        @foreach (var item in Model)
+                        {
+                         <a href="/Embroidery/EmbroideryDetails">
+                             <div class="featured-item">
+                                 <img src="@item.ImageURL" height="230px" alt="Item 1">
+                                 <h4>@item.Nom</h4>
+                                 <h6>MAD @item.Prix</h6>
+                             </div>
+                         </a>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Featred Ends Here -->
+    <!-- Subscribe Form Starts Here -->
+    <div class="subscribe-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <div class="line-dec"></div>
+                        <h1>Abonnez vous !</h1>
+                    </div>
+                </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="main-content">
+                        <div class="container">
+                            <form id="subscribe" action="" method="get">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <fieldset>
+                                            <input name="email" type="text" class="form-control" id="email"
+                                                   onfocus="if(this.value == 'Your Email...') { this.value = ''; }"
+                                                   onBlur="if(this.value == '') { this.value = 'Your Email...';}"
+                                                   value="Your Email..." required="">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="button">Subscribe Now!</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+

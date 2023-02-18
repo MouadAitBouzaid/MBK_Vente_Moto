@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Handmade.Web.Models.EmbroideryDto>
+
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<section class="shop_section layout_padding">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                Notre Catalogue
+            </h2>
+        </div>
+        <div class="col text-end pt-1">
+            <a asp-action="EmbroideryCreate" class="btn btn-outline-primary"> <i class="fas fa-plus">Creer une annonce</i></a>
+        </div>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">
+                    <a asp-action="EmbroideryDetails" asp-route-embroideryId="@item.Id">
+                        <div class="img-box">
+                                <img src=@item.ImageURL alt="" height="230px">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                                @item.Nom
+                            </h6>
+                            <h6>
+
+                                <span>
+                                    MAD @item.Prix
+                                </span>
+                            </h6>
+                        </div>
+                        <div>
+                            <a asp-action="EmbroideryDelete" class="btn btn-danger" asp-route-embroideryId="@item.Id">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                                <a asp-action="EmbroideryEdit" class="btn btn-primary" asp-route-embroideryId="@item.Id">
+                                <i class="fas fa-edit"></i>
+
+
+                            </a>
+
+
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        }
+
+    </div>
+
+</div>
+</section>
